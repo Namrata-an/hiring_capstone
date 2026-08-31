@@ -1,0 +1,25 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.*
+*.db
+*.db-journal
+uploads/
+tests/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Old ad-hoc migration scripts — Alembic owns schema now.
+migrate_phase5.py
+migrate_qb_enhanced.py
+migrate_question_banks.py
+verify_backend.py
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

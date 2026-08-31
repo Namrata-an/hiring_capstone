@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="576" viewBox="0 0 1024 576">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171c25"/>
+      <stop offset="1" stop-color="#10151d"/>
+    </linearGradient>
+    <linearGradient id="presentation" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fb4e5"/>
+      <stop offset="1" stop-color="#bcd5f5"/>
+    </linearGradient>
+    <linearGradient id="application" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#85c8bb"/>
+      <stop offset="1" stop-color="#b4e3d9"/>
+    </linearGradient>
+    <linearGradient id="data" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5cf63"/>
+      <stop offset="1" stop-color="#f7dd8b"/>
+    </linearGradient>
+    <linearGradient id="external" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c9c9c9"/>
+      <stop offset="1" stop-color="#eeeeee"/>
+    </linearGradient>
+    <linearGradient id="module" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#bee2da"/>
+      <stop offset="1" stop-color="#d7eee9"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10z" fill="#dbe7ef"/>
+    </marker>
+    <style>
+      text{font-family:Inter,Aptos,Arial,sans-serif}
+      .white{fill:#f5f7fb}
+      .dark{fill:#05070a}
+      .title{font-weight:800;font-size:22px}
+      .body{font-size:20px}
+      .small{font-size:18px}
+      .label{font-size:18px;fill:#f5f7fb}
+      .line{stroke:#dbe7ef;stroke-width:2;fill:none;marker-end:url(#arrow)}
+      .plainLine{stroke:#dbe7ef;stroke-width:2;fill:none}
+    </style>
+  </defs>
+
+  <rect width="1024" height="576" fill="url(#bg)"/>
+
+  <text x="512" y="55" text-anchor="middle" class="white" font-size="22">User</text>
+  <path d="M512 62 L512 109" class="line"/>
+  <text x="525" y="92" class="label">HTTPS</text>
+
+  <rect x="159" y="112" width="706" height="76" rx="9" fill="url(#presentation)" stroke="#c7defc" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="512" y="143" text-anchor="middle" class="dark title">PRESENTATION LAYER</text>
+  <text x="512" y="170" text-anchor="middle" class="dark body">React + TypeScript (Vite) hosted on Vercel CDN</text>
+
+  <path d="M512 188 L512 237" class="line"/>
+  <text x="525" y="219" class="label">REST + JWT Auth</text>
+
+  <rect x="159" y="238" width="706" height="136" rx="9" fill="url(#application)" stroke="#bfe8df" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="512" y="270" text-anchor="middle" class="dark title">APPLICATION LAYER</text>
+  <text x="512" y="296" text-anchor="middle" class="dark body">FastAPI Python 3.11  |  Docker  |  Azure Container Apps</text>
+
+  <rect x="178" y="314" width="158" height="43" rx="5" fill="url(#module)" stroke="#5f8f86" stroke-width="1.5"/>
+  <rect x="347" y="314" width="159" height="43" rx="5" fill="url(#module)" stroke="#5f8f86" stroke-width="1.5"/>
+  <rect x="517" y="314" width="158" height="43" rx="5" fill="url(#module)" stroke="#5f8f86" stroke-width="1.5"/>
+  <rect x="687" y="314" width="158" height="43" rx="5" fill="url(#module)" stroke="#5f8f86" stroke-width="1.5"/>
+  <text x="257" y="343" text-anchor="middle" class="dark body">routers/</text>
+  <text x="426" y="343" text-anchor="middle" class="dark body">services/</text>
+  <text x="596" y="343" text-anchor="middle" class="dark body">models.py</text>
+  <text x="766" y="343" text-anchor="middle" class="dark body">alembic/</text>
+
+  <path d="M277 374 L277 435" class="line"/>
+  <text x="176" y="412" class="label">SQL / SQLAlchemy ORM</text>
+
+  <path d="M517 374 L517 435" class="line"/>
+  <text x="419" y="412" class="label">PDF Upload / Download</text>
+
+  <path d="M837 374 L837 435" class="line"/>
+  <text x="660" y="404" class="label">Structured Prompt /</text>
+  <text x="680" y="423" class="label">JSON Response</text>
+
+  <path d="M900 304 L900 435" class="plainLine"/>
+  <path d="M865 304 L900 304" class="plainLine"/>
+  <path d="M900 374 L900 435" class="line"/>
+  <text x="855" y="412" class="label">Email Dispatch</text>
+
+  <rect x="159" y="437" width="492" height="110" rx="9" fill="url(#data)" stroke="#ffe9a9" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="405" y="469" text-anchor="middle" class="dark title">DATA LAYER</text>
+  <text x="282" y="500" text-anchor="middle" class="dark body">Neon PostgreSQL</text>
+  <text x="282" y="523" text-anchor="middle" class="dark small">(us-east-1)</text>
+  <text x="518" y="500" text-anchor="middle" class="dark body">UploadThing CDN</text>
+  <text x="518" y="523" text-anchor="middle" class="dark small">(Resume PDF Storage)</text>
+
+  <rect x="683" y="437" width="307" height="110" rx="9" fill="url(#external)" stroke="#f1f1f1" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="837" y="469" text-anchor="middle" class="dark title">EXTERNAL SERVICES</text>
+  <text x="837" y="500" text-anchor="middle" class="dark body">LLM API (OpenAI)</text>
+  <text x="837" y="523" text-anchor="middle" class="dark body">SMTP Email Gateway</text>
+
+  <text x="70" y="283" text-anchor="middle" class="white small">GitHub</text>
+  <text x="70" y="304" text-anchor="middle" class="white small">Actions</text>
+  <text x="70" y="326" text-anchor="middle" class="white small">CI/CD</text>
+  <path d="M110 305 L159 305" class="line"/>
+  <path d="M110 149 L159 149" class="plainLine"/>
+  <path d="M110 149 L110 497" class="plainLine"/>
+  <path d="M110 497 L159 497" class="line"/>
+
+  <path d="M964 519 l18 11 -18 11 11 -11z" fill="#f2f3f5" opacity=".55"/>
+</svg>

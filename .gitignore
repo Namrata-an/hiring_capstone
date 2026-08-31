@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Local data and uploads
+*.db
+*.db-journal
+backend/uploads/
+backend/alembic/versions/__pycache__/
+
+# Test artifacts
+frontend/playwright-report/
+frontend/test-results/
+
+# Stray screenshots from local exploration
+image*.png
+"image copy*.png"
+production-*.png
+
+# Local sample resumes for OCR testing
+resumes/
+
+# Legacy zip drops
+*.zip
+
+# Playwright MCP runtime artifacts
+.playwright-mcp/
+
+# Local backups
+*.bak
+*.backup
+*.bak.*
+
+# Editor swap files
+*.swp
+
+# Stray log files
+*.log
+backend/server.log
