@@ -6,9 +6,10 @@ Friction-removal tool for hiring. FastAPI backend, React/TypeScript frontend, Po
 
 | | |
 |---|---|
-| **Live frontend** | https://hiring-capstone.vercel.app |
+| **Live frontend** | https://hiring-capstone.vercel.app/ |
 | **Live backend** | https://hiring-backend.happymushroom-06d2d3fe.centralindia.azurecontainerapps.io |
-| **Repo** | https://github.com/shlok-iyer/hiring_capstone |
+| **Personal repo** | https://github.com/Namrata-an/hiring_capstone |
+| **Original repo** | https://github.com/shlok-iyer/hiring_capstone |
 | **Docs** | [`docs/`](docs/) |
 
 ## Architecture (current production)
@@ -66,7 +67,16 @@ npm run dev                 # → http://localhost:5173
 
 ## Deploy
 
-CI/CD is in place. **Push to `main` → Vercel + Azure both redeploy.** See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the full pipeline and [`docs/MIGRATIONS.md`](docs/MIGRATIONS.md) for how schema changes flow through.
+The live production app is already available at https://hiring-capstone.vercel.app/.
+
+In this personal repo, backend deployment is manual-only to avoid failed GitHub Actions runs without the original deployment credentials. To publish or run backend deploy actions from this repo, add the required GitHub Actions secrets first:
+
+```text
+DATABASE_URL
+AZURE_CREDENTIALS
+```
+
+The backend may also need runtime secrets such as `JWT_SECRET_KEY`, `OPENROUTER_API_KEY`, UploadThing credentials, and SMTP credentials depending on the feature being deployed. See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the full pipeline and [`docs/MIGRATIONS.md`](docs/MIGRATIONS.md) for how schema changes flow through.
 
 ## Documentation
 
