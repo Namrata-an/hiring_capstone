@@ -9,7 +9,6 @@ Friction-removal tool for hiring. FastAPI backend, React/TypeScript frontend, Po
 | **Live frontend** | https://hiring-capstone.vercel.app/ |
 | **Live backend** | https://hiring-backend.happymushroom-06d2d3fe.centralindia.azurecontainerapps.io |
 | **Personal repo** | https://github.com/Namrata-an/hiring_capstone |
-| **Original repo** | https://github.com/shlok-iyer/hiring_capstone |
 | **Docs** | [`docs/`](docs/) |
 
 ## Architecture (current production)
